@@ -4,6 +4,12 @@
 
 
 
+:root{
+
+    --dbug:2px solid black;
+}
+
+
 body{
 height: 100vh;
 display:grid;
@@ -12,7 +18,7 @@ grid-template-rows: 1fr 4fr;
 }
 
 body>div{
-    border:2px solid black;
+    border:var(--dbug);
 }
 
 
@@ -27,7 +33,7 @@ body>div{
 }
 
 .sidebar>div{
-    border:2px solid black;
+    border:var(--dbug);
 }
 
 .sidebar li{
@@ -48,7 +54,7 @@ body>div{
 
 .options ul{
     padding:1.2rem;
-    border: 1px solid black;
+    border:var(--dbug);
     display: flex;
     flex-wrap:nowrap;
     flex-direction: column;
@@ -57,7 +63,7 @@ body>div{
 
 .settings ul{
      padding:1.2rem;
-    border: 1px solid black;
+    border:var(--dbug);
     display: flex;
     flex-wrap:nowrap;
     flex-direction: column;
@@ -78,7 +84,7 @@ body>div{
 }
 
 .header>div{
-    border:2px solid black;
+    border:var(--dbug);
 }
 
 .searchbar{
@@ -124,7 +130,7 @@ body>div{
 
 
 .greeting>div{
-    border:2px solid black;
+    border:var(--dbug);
 }
 
 .greeting>img{
@@ -185,7 +191,7 @@ body>div{
 }
 
 .main>div{
-    border:2px solid black;
+    border:var(--dbug);
 }
 
 .project-text{
@@ -226,7 +232,7 @@ body>div{
 /* announcements */
 
 .announcements,.trending{
-    border:2px solid black;
+    border:var(--dbug);
     
 }
 
@@ -237,12 +243,12 @@ body>div{
     display: flex;
     flex-direction: column;
     font-size: min(2vw,1.2rem); 
-    border:2px solid black;
+    border:var(--dbug);
     border-radius: 1rem;
 }
 
 .announce,.trend{
-    border:2px solid black;
+    border:var(--dbug);
     height: 4.4vh;
     display: flex;
     align-items: flex-end;
@@ -255,7 +261,7 @@ body>div{
 
 .box>div{
     flex:1;
-    border:2px solid black;
+    border:var(--dbug);
     display: flex;
     flex-direction: column;
     padding:1rem;
@@ -306,14 +312,9 @@ body>div{
     background-color: #555;
 }
 
+/* SCrollbar Part */
 
-
-
-
-
-
-
-
+/* ........End...... */
 
 
 
@@ -327,7 +328,7 @@ body>div{
 }
 
 .tags>div, .tags>img{
-    border:2px solid black;
+    border:var(--dbug);
 
 }
 
@@ -339,4 +340,5 @@ body>div{
 .tags>.txt{
     grid-column: 2/3;
 }
+
 
