@@ -52,6 +52,8 @@ function toggleProfile(){
 }
 
 function untoggleProfile(){
+        if (zoomAllowed)
+        return;
         zoomAllowed =true;
         setTimeout(() => {
         header.classList.remove("active");
@@ -289,7 +291,7 @@ function createElem(){
         par.appendChild(newItem);   //item appends
 
 
-        
+
         dlt = document.querySelectorAll(".delete");
         dlt.forEach((btn) => {
   btn.addEventListener("click", (e) => {
